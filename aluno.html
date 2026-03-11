@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Área do Aluno - Physical Center</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+        HEADER
+========================= -->
+
+<header class="header-aluno">
+
+    <h1>Área do Aluno</h1>
+
+    <nav>
+        <a href="index.php">Home</a>
+        <button onclick="sairConta()">Sair</button>
+    </nav>
+
+</header>
+
+<!-- =========================
+        DASHBOARD DO ALUNO
+========================= -->
+
+<section class="dashboard">
+
+    <!-- Nome do aluno -->
+    <div class="info">
+        <h3>Aluno</h3>
+        <p id="nomeAluno"></p>
+    </div>
+
+    <!-- Plano -->
+    <div class="info">
+        <h3>Plano</h3>
+        <p id="planoAluno"></p>
+    </div>
+
+    <!-- Próximo treino -->
+    <div class="info">
+        <h3>Próximo treino</h3>
+        <p id="proximoTreino"></p>
+    </div>
+
+</section>
+
+<!-- =========================
+        FORMULÁRIO DE TREINO
+========================= -->
+
+<section class="form-section">
+
+    <h2>Novo Treino</h2>
+
+    <div class="form-treino">
+
+        <!-- Data -->
+        <input id="dataTreino" type="date">
+
+        <!-- Tipo de treino -->
+        <select id="tipoTreino">
+
+            <option value="">Tipo</option>
+            <option value="Superiores">Superiores</option>
+            <option value="Inferiores">Inferiores</option>
+
+        </select>
+
+        <!-- Tipo de musculo -->
+        <select id="musculo" name="musculo" required>
+            <option value="">Músculo</option>
+            <option value="Peito">Peito</option>
+            <option value="Costas">Costas</option>
+            <option value="Bíceps">Bíceps</option>
+            <option value="Tríceps">Tríceps</option>
+            <option value="Ombro">Ombro</option>
+            <option value="Perna">Perna</option>
+            <option value="Glúteo">Glúteo</option>
+            <option value="Panturrilha">Panturrilha</option>
+            <option value="Abdômen">Abdômen</option>
+            </select>
+        
+        <!-- Tipo de exercicio -->
+        <select id="exercicio" name="exercicio" required>
+            <option value="">Exercício</option>
+            <option value="Supino Reto">Supino Reto</option>
+            <option value="Supino Inclinado">Supino Inclinado</option>
+            <option value="Crucifixo">Crucifixo</option>
+            <option value="Puxada Frontal">Puxada Frontal</option>
+            <option value="Remada">Remada</option>
+            <option value="Rosca Direta">Rosca Direta</option>
+            <option value="Rosca Alternada">Rosca Alternada</option>
+            <option value="Tríceps Corda">Tríceps Corda</option>
+            <option value="Agachamento">Agachamento</option>
+            <option value="Leg Press">Leg Press</option>
+            <option value="Cadeira Extensora">Cadeira Extensora</option>
+            <option value="Abdominal">Abdominal</option>
+            </select>
+
+        <!-- Carga -->
+        <input id="carga" type="number" placeholder="Carga (kg)">
+
+        <!-- Repetições -->
+        <input id="reps" type="number" placeholder="Repetições">
+
+        <!-- Botão -->
+        <button onclick="adicionarTreino()">
+            Adicionar Treino
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+        TREINOS PENDENTES
+========================= -->
+
+<section>
+
+    <h2>Treinos Pendentes</h2>
+
+    <div id="listaTreinos" class="treinos"></div>
+
+</section>
+
+<!-- =========================
+        TREINOS CONCLUÍDOS
+========================= -->
+
+<section>
+
+    <h2>Treinos Concluídos</h2>
+
+    <div id="treinosConcluidos" class="treinos"></div>
+
+</section>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>

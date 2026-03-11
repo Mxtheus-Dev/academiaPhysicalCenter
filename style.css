@@ -1,0 +1,336 @@
+/* ===============================
+   CONFIGURAÇÕES GERAIS
+=================================*/
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #111;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* ===============================
+   HEADER (PADRÃO)
+=================================*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #000;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav button{
+    margin-left: 10px;
+    }
+
+/* ===============================
+   MENU PRINCIPAL
+=================================*/
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd000;
+}
+
+/* ===============================
+   HERO (PÁGINA INICIAL)
+=================================*/
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+/* ===============================
+   BOTÕES
+=================================*/
+
+button {
+    background: #ffd000;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+/* ===============================
+   CARROSSEL
+=================================*/
+
+.carrosel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { margin-left: 0 }
+    33% { margin-left: -100% }
+    66% { margin-left: -200% }
+}
+
+/* ===============================
+   CARDS (ESTRUTURA / PLANOS)
+=================================*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* ===============================
+   PLANOS
+=================================*/
+
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.plano {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ===============================
+   FORMULÁRIOS
+=================================*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.form input {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+/* ===============================
+   DASHBOARD DO ALUNO
+=================================*/
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:repeat(3, 250px);
+    justify-content:center;
+    gap:90px;
+    
+    margin-top:80px;
+    padding:40px 0;
+    
+}
+
+.info {
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.info:hover {
+    transform: translateY(-5px);
+    background: #242424;
+}
+
+/* ===============================
+   HEADER ÁREA DO ALUNO
+=================================*/
+
+.header-aluno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #000;
+}
+
+.header-aluno h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-aluno nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.header-aluno nav a:hover {
+    color: #ffd000;
+}
+
+/* ===============================
+   HEADER PLANOS
+=================================*/
+
+.header-planos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #000;
+}
+
+.header-planos h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-planos nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header-planos nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.header-planos nav a:hover {
+    color: #ffd000;
+}
+
+/* ===============================
+   FORMULÁRIO DE TREINO
+=================================*/
+
+.form-treino {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.form-treino input,
+.form-treino select {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #e9e9e9;
+}
+
+/* ===============================
+   TREINOS
+=================================*/
+
+.treinos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.treino {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+.treino button {
+    background: #ffd000;
+    border: none;
+    padding: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/* ===============================
+   ADICIONAR TREINO
+=================================*/
+
+.addTreino {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px;
+}
+
+.addTreino input,
+.addTreino select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+
+footer {
+    background: #000;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
